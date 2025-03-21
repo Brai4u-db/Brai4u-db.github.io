@@ -1,0 +1,252 @@
+/* Styl ogólny kontenera */
+.change1 {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolumny o równej szerokości */
+    gap: 40px; /* Odstępy między elementami */
+}
+
+/* Styl dla każdego obrazu w projekcie */
+.projects {
+    position: relative; /* Pozycjonowanie kontenera, aby móc umieścić overlay */
+    transition: all 0.5s; /* Płynne przejście dla obrazu */
+}
+
+.projects img {
+    width: 500px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(52, 152, 219, 0.6);
+    object-fit: cover;
+    transition: all 0.5s;
+}
+
+/* Efekt powiększania obrazu po najechaniu */
+.projects:hover {
+    box-shadow: 0 0 15px rgba(21, 81, 121, 0.6);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* Styl dla siatki, aby była elastyczna */
+.grid {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Półprzezroczyste tło (cała overlay) */
+    border-radius: 15px;
+    opacity: 0; /* Tło początkowo niewidoczne */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Tekst ustawiony na dole */
+    transition: all 0.3s ease; /* Płynne przejście dla tła */
+}
+
+/* Styl tekstu w overlay (na ciemnym tle) */
+.text {
+    background-color: rgba(0, 0, 0); /* Ciemne tło dla tekstu */
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 0; /* Odstęp 5px z góry i dołu */
+    width: 100%; /* Dopasowuje szerokość do kontenera */
+    opacity: 0; /* Tekst początkowo niewidoczny */
+    transition: opacity 0.3s ease; /* Płynne przejście dla tekstu */
+}
+
+/* Efekt hover dla overlay */
+.projects:hover .overlay {
+    opacity: 1; /* Po najechaniu na obrazek tło staje się widoczne */
+}
+
+.projects:hover .overlay .text {
+    opacity: 1; /* Po najechaniu tekst staje się widoczny */
+}
+
+.change1 .grid:nth-child(3) .projects:nth-child(1) {
+    display: none;
+}
+
+.change1 .grid:nth-child(3) .projects:nth-child(2) {
+    display: none;
+}
+
+/*ZMIANA 2*/
+.change2
+{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolumny o równej szerokości */
+    gap: 40px; /* Odstępy między elementami */
+}
+
+.change2.grid
+{
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+}
+
+.change2 .grid img{
+    width: 200px;
+    height: auto;
+}
+
+.stacklang
+{
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 5px rgba(52, 152, 219, 0.2);
+    transition: all 0.5s;
+}
+
+.stacklang:hover
+{
+    transform: scale(1.1);
+}
+
+.grid:nth-child(1) .stacklang:nth-child(1)
+{
+    background-color: #e68d68;
+}
+
+.grid:nth-child(1) .stacklang:nth-child(2)
+{
+    background-color: #93aeee;
+}
+
+.grid:nth-child(1) .stacklang:nth-child(3)
+{
+    background-color: #f7efbe;
+}
+
+.grid:nth-child(1) .stacklang:nth-child(4)
+{
+    background-color: #ffffff;
+}
+
+
+/*grid2*/
+
+.grid:nth-child(2) .stacklang:nth-child(1)
+{
+    background-color: #a0ebfd;
+}
+.grid:nth-child(2) .stacklang:nth-child(2)
+{
+    background-color: #ffffff;
+}
+
+.grid:nth-child(2) .stacklang:nth-child(3)
+{
+    background-color: #AEB2D5;
+}
+
+.grid:nth-child(2) .stacklang:nth-child(4)
+{
+    background-color: #ffffff;
+}
+
+.change2 .grid:nth-child(3)
+{
+    display: none;
+}
+
+@media (max-width: 1500px)
+{
+    .change1
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .change1 .grid{
+        gap: 20px;
+    }
+
+    .change1 .grid:nth-child(1) .projects:nth-child(3)
+    {
+        display: none;
+    }
+
+    .change1 .grid:nth-child(2) .projects:nth-child(3)
+    {
+        display: none;
+    }
+
+    .change1 .grid:nth-child(3) .projects:nth-child(1) {
+        display: flex;
+    }
+    
+    .change1 .grid:nth-child(3) .projects:nth-child(2) {
+        display: flex;
+    }
+
+    .projects img {
+        width: 250px;
+        height: auto;
+        border-radius: 15px;
+        box-shadow: 0 0 15px rgba(52, 152, 219, 0.6);
+        object-fit: cover;
+        transition: all 0.5s;
+    }
+    
+
+    .change2{
+        display: flex;
+    }
+
+    .stacklang
+    {
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 5px 5px rgba(52, 152, 219, 0.2);
+        transition: all 0.5s;
+    }
+
+    .change2 .grid img{
+        display: flex;
+        width: 100px;
+        height: auto;
+    }
+
+    .stacklang:nth-child(4)
+    {
+        display: none;
+    }
+    
+    .change2 .grid:nth-child(3)
+    {
+        display: flex;
+    }
+
+    .grid:nth-child(3) .stacklang:nth-child(1)
+    {
+        background-color: #ffffff;
+    }
+
+    .grid:nth-child(3) .stacklang:nth-child(2)
+    {
+        background-color: #ffffff;
+    }
+    
+    .changing
+    {
+        display:flex;
+    }
+
+}
