@@ -126,7 +126,7 @@ a {
         height: 70px;
     }
 
-    .menu-content li a span:last-child {
+    .menu-content li a span {
         display: none;
     }
 }
