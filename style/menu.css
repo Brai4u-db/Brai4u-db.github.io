@@ -125,5 +125,9 @@ a {
     .menu:hover {
         height: 70px;
     }
+
+    .menu-content li a span:last-child {
+        display: none;
+    }
 }
 
