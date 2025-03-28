@@ -112,6 +112,7 @@ a:hover
     
     .contactcontent {
         display: flex;
+        width: 100%;
         flex-direction: row; /* Ustawienie elementów jeden pod drugim */
         align-items: center; /* Wycentrowanie elementów w poziomie */
         gap : 20px; /* Odległość między elementami */
@@ -130,7 +131,7 @@ a:hover
     a{
         text-decoration: none;
         color: white;
-        font-size: 24px;
+        font-size: 18px;
         transition: all 0.5s;
     }
     
