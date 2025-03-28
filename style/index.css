@@ -249,7 +249,7 @@ p{
 
     .loop
     {
-        width: 100%;
+        width: max-content;
         height: auto;
     }
 }
