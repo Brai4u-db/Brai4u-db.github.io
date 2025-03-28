@@ -57,24 +57,29 @@ const tresci = {
             </div>
     </div>`,
     2: `
-    <div class="change2">
-        <div class="grid">
-            <div class="stacklang"><img src="img/html.png" alt="HTML"></div>
-            <div class="stacklang"><img src="img/css.png" alt="CSS"></div>
-            <div class="stacklang"><img src="img/js.png" alt="JavaScript"></div>
-            <div class="stacklang"><img src="img/wordpress.png" alt="WordPress"></div>
-        </div>
-        <div class="grid">
-            <div class="stacklang"><img src="img/react.png" alt="React"></div>
-            <div class="stacklang"><img src="img/jquery.png" alt="jQuery"></div>
-            <div class="stacklang"><img src="img/php.png" alt="PHP"></div>
-            <div class="stacklang"><img src="img/mysql.png" alt="MySQL"></div>
-        </div>
-        <div class="grid">
+            <div class="change2">
+            <div class="grid">
+                <div class="stacklang"><img src="img/html.png" alt="HTML"></div>
+                <div class="stacklang"><img src="img/css.png" alt="CSS"></div>
+                <div class="stacklang"><img src="img/js.png" alt="JavaScript"></div>
                 <div class="stacklang"><img src="img/wordpress.png" alt="WordPress"></div>
+            </div>
+            <div class="grid">
+                <div class="stacklang"><img src="img/react.png" alt="React"></div>
+                <div class="stacklang"><img src="img/jquery.png" alt="jQuery"></div>
+                <div class="stacklang"><img src="img/php.png" alt="PHP"></div>
                 <div class="stacklang"><img src="img/mysql.png" alt="MySQL"></div>
             </div>
-    </div>`,
+            <div class="grid">
+                <div class="stacklang"><img src="img/js.png" alt="JavaScript"></div>
+                <div class="stacklang"><img src="img/php.png" alt="PHP"></div>
+            </div>
+            <div class="grid">
+                    <div class="stacklang"><img src="img/wordpress.png" alt="WordPress"></div>
+                    <div class="stacklang"><img src="img/mysql.png" alt="MySQL"></div>
+            </div>
+        </div>
+`,
 };
 
 function bt(numer) {
