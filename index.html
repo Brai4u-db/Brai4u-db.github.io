@@ -17,45 +17,46 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
     <script src="function.js"></script>
+    <link rel="stylesheet" href="style/animations.css">
     <title>Jakub Malinowski - Portfolio</title>
 </head>
 <body>
     <div class="menu">
         <ul class="menu-content">
-            <li><a href="#home"><span class="material-symbols-outlined">home</span><span>Home</span></a></li>
-            <li><a href="#projekty"><span class="material-symbols-outlined">analytics</span><span>Projekty</span></a></li>
-            <li><a href="#aboutme"><span class="material-symbols-outlined">person</span><span>O mnie</span></a></li>
-            <li><a href="#kontakt"><span class="material-symbols-outlined">email</span><span>Kontakt</span></a></li>
+            <li class="animate-fade-in delay-1"><a href="#home"><span class="material-symbols-outlined">home</span><span>Home</span></a></li>
+            <li class="animate-fade-in delay-2"><a href="#projekty"><span class="material-symbols-outlined">analytics</span><span>Projekty</span></a></li>
+            <li class="animate-fade-in delay-3"><a href="#aboutme"><span class="material-symbols-outlined">person</span><span>O mnie</span></a></li>
+            <li class="animate-fade-in delay-4"><a href="#kontakt"><span class="material-symbols-outlined">email</span><span>Kontakt</span></a></li>
             <!--<li><a href="#"><span class="material-symbols-outlined">settings</span><span>Ustawienia</span></a></li>-->
         </ul>
     </div>
 
     <div class="content" id="home">
-        <div class="place1">
-            <h1><span class="first-word">Web</span><br><span class="second-word">Developer</span></h1>
-            <span class="animationtext">Sieci & Rozwój</span>
-            <p>Zobacz nasze projekty i przekonaj się, jak tworzymy strony, które łączą funkcjonalność z kreatywnością.</p>
+        <div class="place1 animate-slide-left">
+            <h1 class="animate-fade-in"><span class="first-word">Web</span><br><span class="second-word animate-glow">Developer</span></h1>
+            <span class="animationtext animate-fade-in delay-1">Sieci & Rozwój</span>
+            <p class="animate-fade-in delay-2">Zobacz nasze projekty i przekonaj się, jak tworzymy strony, które łączą funkcjonalność z kreatywnością.</p>
             <div class="iconlang">
-                <div class="lang">JavaScript</div>
-                <div class="lang">Node.js</div>
-                <div class="lang">HTML5</div>
-                <div class="lang">CSS3</div>
+                <div class="lang hover-scale">JavaScript</div>
+                <div class="lang hover-scale">Node.js</div>
+                <div class="lang hover-scale">HTML5</div>
+                <div class="lang hover-scale">CSS3</div>
             </div>
             <div class="contacthero">
-                <div class="infohero">
-                <a href="#projekty">Projekty<span class="material-symbols-outlined">open_in_new</span></a>
+                <div class="infohero hover-glow">
+                    <a href="#projekty">Projekty<span class="material-symbols-outlined">open_in_new</span></a>
                 </div>
-                <div class="infohero">
-                <a href="#kontakt">Kontakt<span class="material-symbols-outlined">perm_phone_msg</span></a>
+                <div class="infohero hover-glow">
+                    <a href="#kontakt">Kontakt<span class="material-symbols-outlined">perm_phone_msg</span></a>
                 </div>
             </div>
             <div class="social">
-                <a href="https://github.com/Brai4u-db" target="_blank"><div class="socialicon"><i class="icon-github-circled"></i></div></a>
-                <a href="https://www.linkedin.com/in/jakub-malinowski-9a0b71350/" target="_blank"><div class="socialicon"><i class="icon-linkedin"></i></div></a>
-                <a href="https://www.instagram.com/j.malinowski00?utm_source=qr&igsh==MWgwNzJ5MzYwY2hlOQ" target="_blank"><div class="socialicon"><i class="icon-instagram"></i></div></a>
+                <a href="https://github.com/Brai4u-db" target="_blank"><div class="socialicon hover-scale"><i class="icon-github-circled"></i></div></a>
+                <a href="https://www.linkedin.com/in/jakub-malinowski-9a0b71350/" target="_blank"><div class="socialicon hover-scale"><i class="icon-linkedin"></i></div></a>
+                <a href="https://www.instagram.com/j.malinowski00?utm_source=qr&igsh==MWgwNzJ5MzYwY2hlOQ" target="_blank"><div class="socialicon hover-scale"><i class="icon-instagram"></i></div></a>
             </div>
         </div>
-        <div class="place2">
+        <div class="place2 animate-slide-right">
             <dotlottie-player src="https://lottie.host/c10d4305-217b-4fa0-a3e3-7a4a3375919d/rvbyk9edCI.lottie" background="transparent" speed="1" class="loop" loop autoplay></dotlottie-player>
         </div>
     </div>
