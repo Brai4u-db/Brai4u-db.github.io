@@ -74,15 +74,44 @@ a:hover
     gap: 25px;
 }
 
-@media (max-width: 1500px)
-{
+@media (max-width: 1500px) {
     #contactinfo {
-        display: inline-flex;
+        display: flex;
         justify-content: center;
         flex-direction: column;
         gap: 25px;
+        width: 100%;
+        align-items: center;
     }
     
+    .contactcontent {
+        display: flex;
+        width: 80%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 2px 2px rgba(52, 152, 219, 0.6);
+        padding: 20px;
+        transition: all 0.5s;
+    }
+}
+
+@media (max-width: 768px) {
+    #contactinfo {
+        width: 100%;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .contactcontent {
+        width: 90%;
+        padding: 15px;
+        gap: 15px;
+        justify-content: center;
+    }
+
     .contact-item {
         font-size: 48px;
         border-radius: 100%;
@@ -109,67 +138,6 @@ a:hover
         transform: scale(1.1);
         cursor: pointer;
     }
-    
-    .contactcontent {
-        display: flex;
-        width: 80%;
-        flex-direction: row; /* Ustawienie elementów jeden pod drugim */
-        align-items: center; /* Wycentrowanie elementów w poziomie */
-        gap : 20px; /* Odległość między elementami */
-        border-radius: 15px;
-        box-shadow: 0px 0px 2px 2px rgba(52, 152, 219, 0.6);
-        padding: 20px;
-        transition: all 0.5s;
-    }
-    
-    .contactcontent:hover{
-        background-color: steelblue; /* Zmiana tła dla aktywnego przycisku */
-        color: white; /* Kolor tekstu dla aktywnego przycisku */
-        box-shadow: 0 0 15px rgba(52, 152, 219, 0.6); /* Podświetlenie aktywnego przycisku */
-    }
-    
-    a{
-        text-decoration: none;
-        color: white;
-        font-size: 18px;
-        transition: all 0.5s;
-    }
-    
-    a:hover
-    {
-        transform: scale(1.1);
-    }
-    
-    .contactme{
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-    }
-}
-
-@media (max-width: 768px) {
-    #contactinfo {
-        width: 100%;
-        padding: 10px;
-    }
-
-    .contactcontent {
-        width: 100%;
-        padding: 15px;
-        gap: 15px;
-    }
-
-    .contact-item {
-        font-size: 36px;
-        height: 60px;
-        width: 60px;
-    }
-
-    .contact-item:hover {
-        font-size: 36px;
-        height: 60px;
-        width: 60px;
-    }
 
     a {
         font-size: 16px;
@@ -183,13 +151,15 @@ a:hover
 @media (max-width: 480px) {
     #contactinfo {
         padding: 5px;
+        align-items: center;
     }
 
     .contactcontent {
+        width: 95%;
         padding: 10px;
         gap: 10px;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .contact-item {
