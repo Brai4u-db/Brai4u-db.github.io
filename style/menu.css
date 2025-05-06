@@ -127,3 +127,44 @@ a {
     }
 }
 
+@media (max-width: 480px) {
+    .menu {
+        height: 50px;
+        padding: 5px;
+    }
+
+    .menu-content {
+        justify-content: space-around;
+    }
+
+    .menu-content li {
+        margin: 0 2px;
+        padding: 2px;
+    }
+
+    .material-symbols-outlined {
+        font-size: 24px;
+        padding: 4px;
+        margin-right: 0;
+    }
+
+    .menu:hover {
+        height: 60px;
+    }
+}
+
+@media (max-width: 320px) {
+    .menu {
+        height: 45px;
+    }
+
+    .material-symbols-outlined {
+        font-size: 20px;
+        padding: 3px;
+    }
+
+    .menu:hover {
+        height: 55px;
+    }
+}
+
