@@ -1,0 +1,67 @@
+.content2
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    gap: 20px;
+    padding-bottom: 150px;
+    padding-top: 80px;
+}
+
+.chose
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.chose{
+    background: linear-gradient(#093c5e, #555555);
+    margin-top: 10px;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.buttonsstack {
+    background-color: inherit;
+    font-size: 25px;
+    font-family: "Lato";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    border-radius: 15px;
+    padding: 5px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.buttonsstack:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Kolor na hover */
+    box-shadow: 0 0 15px rgba(52, 152, 219, 0.6); /* Efekt rozmazania */
+}
+
+.buttonsstack.active {  /* Dodanie klasy aktywnej */
+    background-color: steelblue; /* Zmiana tła dla aktywnego przycisku */
+    color: white; /* Kolor tekstu dla aktywnego przycisku */
+    box-shadow: 0 0 15px rgba(52, 152, 219, 0.6); /* Podświetlenie aktywnego przycisku */
+}
+.buttonsstac .material-symbols-outlined
+{
+    background-color: inherit;
+}
+
+.changing
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    border-radius: 15px;
+    border: 2px solid rgba(52, 152, 219, 0.6);
+}
