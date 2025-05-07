@@ -244,77 +244,38 @@ p{
     }
 }
 
-@media (max-width: 768px) {
-    body {
-        margin-top: 80px;
-    }
-
+@media (max-width: 800px) {
     .content {
+        flex-direction: column;
         padding: 10px;
+        margin-bottom: 15px;
     }
-
+    .place1, .place2 {
+        width: 100%;
+        padding: 5px;
+        box-shadow: none;
+    }
     h1 {
         font-size: 36px;
     }
-
-    p {
+    p, .animationtext {
         font-size: 18px;
-    }
-
-    .animationtext {
-        font-size: 20px;
-    }
-
-    .lang {
-        font-size: 16px;
-        padding: 8px;
-    }
-
-    .contacthero {
-        font-size: 18px;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .social {
-        justify-content: center;
-    }
-
-    .socialicon {
-        font-size: 24px;
-        padding: 8px;
     }
 }
 
 @media (max-width: 480px) {
-    body {
-        margin-top: 60px;
+    .content {
+        padding: 2px;
+        margin-bottom: 5px;
     }
-
+    .place1, .place2 {
+        padding: 2px;
+    }
     h1 {
-        font-size: 28px;
+        font-size: 24px;
     }
-
-    p {
-        font-size: 16px;
-    }
-
-    .animationtext {
-        font-size: 18px;
-    }
-
-    .lang {
+    p, .animationtext {
         font-size: 14px;
-        padding: 6px;
-    }
-
-    .contacthero {
-        font-size: 16px;
-    }
-
-    .socialicon {
-        font-size: 20px;
-        padding: 6px;
     }
 }
 
