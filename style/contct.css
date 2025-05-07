@@ -1,28 +1,32 @@
 #photo {
     background: linear-gradient(90deg, rgba(0,0,0,0.5) 80%, rgba(60,60,61,0.5) 100%);
     height: auto;
-    width: 50%;
+    width: 100%;
+    max-width: 600px;
 }
 
 
 #contactinfo {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     flex-direction: row;
     gap: 25px;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
 }
 
 .contact-item {
-    font-size: 48px;
+    font-size: clamp(24px, 4vw, 48px);
     border-radius: 100%;
     background-color: #000000;
     box-shadow: 0px 2px 2px 2px rgba(52, 152, 219, 0.6);
-    height: 80px;
-    width: 80px;
+    height: clamp(40px, 8vw, 80px);
+    width: clamp(40px, 8vw, 80px);
     justify-content: center;
     align-items: center;
     display: flex;
-    transition: all 1s;
+    transition: all 0.3s ease;
     margin-bottom: 10px;
 }
 
@@ -41,13 +45,15 @@
 
 .contactcontent {
     display: flex;
-    flex-direction: row; /* Ustawienie elementów jeden pod drugim */
-    align-items: center; /* Wycentrowanie elementów w poziomie */
-    gap : 20px; /* Odległość między elementami */
+    flex-direction: row;
+    align-items: center;
+    gap: clamp(10px, 2vw, 20px);
     border-radius: 15px;
     box-shadow: 0px 0px 2px 2px rgba(52, 152, 219, 0.6);
-    padding: 20px;
-    transition: all 0.5s;
+    padding: clamp(10px, 2vw, 20px);
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 800px;
 }
 
 .contactcontent:hover{
@@ -74,15 +80,36 @@ a:hover
     gap: 25px;
 }
 
-@media (max-width: 1500px)
-{
+@media (max-width: 1500px) {
     #contactinfo {
-        display: inline-flex;
+        display: flex;
         justify-content: center;
-        flex-direction: column;
-        gap: 25px;
+        flex-direction: row;
+        gap: clamp(15px, 2vw, 25px);
+        width: 100%;
+        align-items: center;
+        flex-wrap: wrap;
     }
     
+    .contactcontent {
+        width: 90%;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    #contactinfo {
+        width: 100%;
+        padding: clamp(5px, 1vw, 10px);
+        gap: clamp(10px, 2vw, 15px);
+    }
+
+    .contactcontent {
+        width: 95%;
+        padding: clamp(10px, 2vw, 15px);
+        gap: clamp(8px, 1.5vw, 15px);
+    }
+
     .contact-item {
         font-size: 48px;
         border-radius: 100%;
@@ -109,40 +136,51 @@ a:hover
         transform: scale(1.1);
         cursor: pointer;
     }
-    
+
+    a {
+        font-size: clamp(14px, 2vw, 16px);
+    }
+
+    .contactme {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
     .contactcontent {
-        display: flex;
-        width: 80%;
-        flex-direction: row; /* Ustawienie elementów jeden pod drugim */
-        align-items: center; /* Wycentrowanie elementów w poziomie */
-        gap : 20px; /* Odległość między elementami */
-        border-radius: 15px;
-        box-shadow: 0px 0px 2px 2px rgba(52, 152, 219, 0.6);
-        padding: 20px;
-        transition: all 0.5s;
-    }
-    
-    .contactcontent:hover{
-        background-color: steelblue; /* Zmiana tła dla aktywnego przycisku */
-        color: white; /* Kolor tekstu dla aktywnego przycisku */
-        box-shadow: 0 0 15px rgba(52, 152, 219, 0.6); /* Podświetlenie aktywnego przycisku */
-    }
-    
-    a{
-        text-decoration: none;
-        color: white;
-        font-size: 18px;
-        transition: all 0.5s;
-    }
-    
-    a:hover
-    {
-        transform: scale(1.1);
-    }
-    
-    .contactme{
-        display: flex;
+        width: 100%;
+        padding: clamp(8px, 1.5vw, 10px);
+        gap: clamp(5px, 1vw, 10px);
         flex-direction: column;
-        gap: 25px;
+        text-align: center;
+    }
+
+    .contact-item {
+        margin-bottom: clamp(3px, 1vw, 5px);
+    }
+
+    a {
+        font-size: clamp(12px, 1.8vw, 14px);
+        word-break: break-word;
+    }
+
+    .contactme {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 320px) {
+    .contactcontent {
+        padding: clamp(5px, 1vw, 8px);
+        gap: clamp(4px, 0.8vw, 8px);
+    }
+
+    .contact-item {
+        height: clamp(35px, 7vw, 40px);
+        width: clamp(35px, 7vw, 40px);
+    }
+
+    a {
+        font-size: clamp(10px, 1.5vw, 12px);
     }
 }
