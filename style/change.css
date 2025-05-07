@@ -170,201 +170,49 @@
     display: none;
 }
 
-@media (max-width: 1500px)
-{
-    .change1
-    {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .change1 .grid{
-        gap: 30px;
-    }
-
-    .change1 .grid:nth-child(1) .projects:nth-child(3)
-    {
-        display: none;
-    }
-
-    .change1 .grid:nth-child(2) .projects:nth-child(3)
-    {
-        display: none;
-    }
-
-    .change1 .grid:nth-child(3) .projects:nth-child(1) {
-        display: flex;
-    }
-    
-    .change1 .grid:nth-child(3) .projects:nth-child(2) {
-        display: flex;
-    }
-
+@media (min-width: 801px) and (max-width: 1200px) {
     .projects img {
-        width: 150px;
-        height: auto;
-        border-radius: 15px;
-        box-shadow: 0 0 15px rgba(52, 152, 219, 0.6);
-        object-fit: cover;
-        transition: all 0.5s;
-    }
-    
-
-    .change2{
-        display: flex;
-    }
-
-    .stacklang
-    {
-        padding-left: 5px;
-        padding-right: 5px;
-        border-radius: 15px;
-        box-shadow: 0px 0px 5px 5px rgba(52, 152, 219, 0.2);
-        transition: all 0.5s;
-    }
-
-    .change2 .grid img{
-        display: flex;
-        width: 100px;
+        width: 60vw;
+        max-width: 600px;
+        min-width: 300px;
         height: auto;
     }
-
-    .stacklang:nth-child(4)
-    {
-        display: none;
+    .change1 .grid {
+        gap: 30px;
+        flex-direction: row;
+        justify-content: center;
     }
-    
-    .change2 .grid:nth-child(3)
-    {
-        display: none;
-    }
-
-    .change2 .grid:nth-child(4)
-    {
-        display: flex;
-    }
-
-    .grid:nth-child(4) .stacklang:nth-child(1)
-    {
-        background-color: #ffffff;
-    }
-
-    .grid:nth-child(4) .stacklang:nth-child(2)
-    {
-        background-color: #ffffff;
-    }
-    
-    .changing
-    {
-        display:flex;
-    }
-
 }
 
-@media (max-width: 800px)
-{
-    .change1 .grid {
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
+@media (min-width: 1100px) and (max-width: 1500px) {
+    .projects img {
+        width: 40vw;
+        max-width: 500px;
+        min-width: 220px;
+        height: auto;
     }
+    .change1 .grid {
+        gap: 40px;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1500px) {
+    .projects img {
+        width: 300px;
+        max-width: 90vw;
+        min-width: 180px;
+        height: auto;
+    }
+}
+
+@media (max-width: 800px) {
     .projects img {
         width: 100%;
         max-width: 350px;
+        min-width: 120px;
         height: auto;
-    }
-
-    .change1 .grid:nth-child(1) .projects:nth-child(3)
-    {
-        display: none;
-    }
-
-    .change1 .grid:nth-child(2) .projects:nth-child(3)
-    {
-        display: none;
-    }
-
-    .change1 .grid:nth-child(3) .projects:nth-child(1) {
-        display: flex;
-    }
-    
-    .change1 .grid:nth-child(3) .projects:nth-child(2) {
-        display: flex;
-    }
-
-    .projects
-    {
-        width: 100%;
-        height: auto;
-    }
-    
-
-    .change2{
-        display: flex;
-    }
-
-    .stacklang
-    {
-        padding-left: 5px;
-        padding-right: 5px;
-        border-radius: 15px;
-        box-shadow: 0px 0px 5px 5px rgba(52, 152, 219, 0.2);
-        transition: all 0.5s;
-    }
-
-    .change2 .grid img{
-        display: flex;
-        width: 100px;
-        height: auto;
-    }
-
-    .change2 .grid:nth-child(4)
-    {
-        display: flex;
-    }
-
-    .stacklang:nth-child(4)
-    {
-        display: none;
-    }
-
-    .stacklang:nth-child(3)
-    {
-        display: none;
-    }
-    
-    .change2 .grid:nth-child(3)
-    {
-        display: flex;
-    }
-
-    .grid:nth-child(3) .stacklang:nth-child(1)
-    {
-        background-color: #f7efbe;
-    }
-
-    .grid:nth-child(3) .stacklang:nth-child(2)
-    {
-        background-color: #AEB2D5;
-    }
-
-
-    .grid:nth-child(4) .stacklang:nth-child(1)
-    {
-        background-color: #ffffff;
-    }
-
-    .grid:nth-child(4) .stacklang:nth-child(2)
-    {
-        background-color: #ffffff;
-    }
-    
-    .changing
-    {
-        display:flex;
-        height: max-content;
-        padding-top: 10px;
-        padding-bottom: 10px;
     }
 }
 
