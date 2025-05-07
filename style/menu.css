@@ -113,46 +113,35 @@ a {
 @media (max-width: 800px) {
     .menu {
         height: 60px;
-        padding: 8px;
+        padding: 4px;
     }
-
-    .material-symbols-outlined {
-        font-size: 28px;
-    }
-
     .menu-content li {
-        margin: 0 3px;
-        padding: 3px;
+        margin: 0 2px;
+        padding: 2px;
     }
-
-    .menu:hover {
-        height: 60px;
+    .material-symbols-outlined {
+        font-size: 20px;
+        padding: 2px;
+        margin-right: 0;
     }
 }
 
 @media (max-width: 480px) {
     .menu {
-        height: 50px;
-        padding: 5px;
+        height: 45px;
+        padding: 2px;
     }
-
     .menu-content {
         justify-content: space-around;
     }
-
     .menu-content li {
-        margin: 0 2px;
-        padding: 2px;
+        margin: 0 1px;
+        padding: 1px;
     }
-
     .material-symbols-outlined {
-        font-size: 24px;
-        padding: 4px;
+        font-size: 16px;
+        padding: 1px;
         margin-right: 0;
-    }
-
-    .menu:hover {
-        height: 60px;
     }
 }
 
