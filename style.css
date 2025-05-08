@@ -662,7 +662,7 @@ button[type="submit"]:hover {
     }
 
     .close-menu {
-        display: block;
+        display: none;
         color: #fff;
         position: absolute;
         top: 1rem;
