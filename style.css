@@ -61,7 +61,7 @@ nav {
 }
 
 .menu-toggle {
-    display: none;
+    display: none !important;
     background: none;
     border: none;
     color: #fff;
@@ -638,7 +638,7 @@ button[type="submit"]:hover {
     }
 
     .menu-toggle {
-        display: flex;
+        display: flex !important;
         margin: 0;
     }
 
